@@ -1,6 +1,6 @@
 const getPageHtml = require("./getPageHtml");
 const getSubDir = require("./getSubDir");
-const { TOP_LEVEL_DOMAIN } = require("../../constants");
+const { TOP_LEVEL_DOMAIN } = require("../../utils/constants");
 
 function handlePage(product) {
 	// Generate Link

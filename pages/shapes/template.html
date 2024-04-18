@@ -1,21 +1,11 @@
 <div>
 	<h1>{{ product }} {{ shape }}</h1>
-	<p>
-		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sed
-		dignissimos provident dolor natus iusto nulla eligendi veritatis, laudantium
-		harum sunt explicabo, pariatur ratione excepturi eius quod laborum,
-		voluptates molestiae odio repudiandae. Minima vero at provident dolor
-		corporis facere, voluptas ad laboriosam ea impedit, quam nihil quaerat
-		excepturi, delectus assumenda.
-	</p>
+	<p>{{ shapeContent}}</p>
 	<ul>
 		{{#types}}
 		<li>
-			<p>{{{ type }}}</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
-				quibusdam.
-			</p>
+			<p>{{ type }}</p>
+			<p>{{typeContent}}</p>
 		</li>
 		{{/types}}
 	</ul>

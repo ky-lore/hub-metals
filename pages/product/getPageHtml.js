@@ -13,7 +13,7 @@ function getPageHtml(product, shape) {
 	// Data to be inserted into the template
 	const data = {
 		product: toTitle(product.product),
-		shapes: product.shapes.map((shape) => ({ shape })),
+		shapes: product.shapes.map((shape) => ({ shape: shape.type })),
 	};
 
 	// Render the Mustache template

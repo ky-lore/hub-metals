@@ -1,6 +1,6 @@
 const handleProductPage = require("./pages/product/handlePage");
 const handleProductShapePage = require("./pages/shapes/handlePage");
-const { PRODUCTS } = require("./constants");
+const { PRODUCTS } = require("./utils/constants");
 
 function main() {
 	for (let product of PRODUCTS) {
