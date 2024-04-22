@@ -11,6 +11,12 @@ function handlePage(product, shape) {
 	// Generate html
 	const pageHtml = getPageHtml(product, shape);
 	console.log(pageHtml);
+
+	return {
+		link,
+		title: shape.type,
+		pageHtml,
+	};
 }
 
 module.exports = handlePage;

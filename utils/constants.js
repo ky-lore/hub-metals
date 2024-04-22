@@ -1,4 +1,5 @@
 const TOP_LEVEL_DOMAIN = "https://hubmetalsandtrading.com/";
+const PRODUCT_PAGE_ID = 2;
 const PRODUCTS = [
 	{
 		product: "aluminum-alloy",

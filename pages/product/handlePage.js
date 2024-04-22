@@ -11,6 +11,12 @@ function handlePage(product) {
 	// Generate html
 	const pageHtml = getPageHtml(product);
 	console.log(pageHtml);
+
+	return {
+		link: link,
+		title: product.product,
+		pageHtml: pageHtml,
+	};
 }
 
 module.exports = handlePage;
