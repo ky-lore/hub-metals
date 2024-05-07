@@ -8,9 +8,9 @@ const pageIds = require("./utils/pageIds");
 const { PRODUCTS, PRODUCT_PAGE_ID } = require("./utils/constants");
 
 async function main() {
-	for (let pageId of pageIds) {
-		await deleteWordPressPage(pageId);
-	}
+	// for (let pageId of pageIds) {
+	// 	await deleteWordPressPage(pageId);
+	// }
 
 	let newPageIds = [];
 	for (let product of PRODUCTS) {

@@ -2,7 +2,7 @@ require("dotenv").config();
 const axios = require("axios");
 
 async function createWordPressPage(title, content, parentId) {
-	const url = "https://demo.instaboostinc.com/wp-json/wp/v2/pages";
+	const url = "https://hubmetalsandtrading.com/wp-json/wp/v2/pages";
 	const data = {
 		title: title,
 		content: content,
@@ -18,6 +18,7 @@ async function createWordPressPage(title, content, parentId) {
 			"Content-Type": "application/json",
 		},
 	});
+	console.log(response)
 	return response.data.id;
 }
 

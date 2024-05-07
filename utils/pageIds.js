@@ -1,3 +1,3 @@
-const pageIds = [75,76];
+const pageIds = [1140,1141];
 
 module.exports = pageIds;

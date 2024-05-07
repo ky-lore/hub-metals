@@ -1,5 +1,5 @@
 function getSubDir(product) {
-	return `products/${product.product}`;
+	return `our-metals/${product.product}`;
 }
 
 module.exports = getSubDir;
