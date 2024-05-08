@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const handleProductPage = require("./pages/product/handlePage");
 const handleProductShapePage = require("./pages/shapes/handlePage");
+const handleProductTypePage = require("./pages/types/handlePage");
 const createWordPressPage = require("./utils/createWordPressPage");
 const deleteWordPressPage = require("./utils/deleteWordPressPage");
 const pageIds = require("./utils/pageIds");
@@ -27,6 +28,17 @@ async function main() {
 			const id = await createWordPressPage(
 				shapePageDetails.title,
 				shapePageDetails.pageHtml,
+				parentId
+			);
+			newPageIds.push(id);
+			break;
+		}
+
+		for (let type of product.types) {
+			const typePageDetails = handleProductTypePage(product, 'test', type);
+			const id = await createWordPressPage(
+				typePageDetails.title,
+				typePageDetails.pageHtml,
 				parentId
 			);
 			newPageIds.push(id);

@@ -1,5 +1,5 @@
-function getSubDir(product, shape, variant) {
-	return `our-metals/${product.product}/${shape.type}/${types.type}`;
+function getSubDir(product, shape, type) {
+	return `our-metals/${product.product}/${type.type}`;
 }
 
 module.exports = getSubDir;
