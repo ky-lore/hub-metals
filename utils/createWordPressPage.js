@@ -6,7 +6,7 @@ async function createWordPressPage(title, content, parentId) {
 	const data = {
 		title: title,
 		content: content,
-		status: "publish",
+		status: "draft",
 		parent: parentId,
 	};
 
